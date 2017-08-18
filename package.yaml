@@ -1,0 +1,46 @@
+benchmarks:
+  hexy-foundation-benchmarks:
+    dependencies:
+    - hexy-foundation
+    - criterion
+    ghc-options:
+    - -rtsopts
+    - -threaded
+    - -with-rtsopts=-N
+    main: Main.hs
+    source-dirs: benchmark
+category: Text, Pretty Printer
+dependencies:
+- base
+- foundation
+- text
+description: Fast, flexible hexadecimal pretty-printing using Foundation.
+extra-source-files:
+- CHANGELOG.md
+- LICENSE.md
+- package.yaml
+- README.md
+- stack.yaml
+ghc-options: -Wall
+github: jship/hexy-foundation
+library:
+  dependencies: []
+  source-dirs: library
+license: MIT
+maintainer: Jason Shipman
+name: hexy-foundation
+synopsis: Hexadecimal pretty-printing
+tests:
+  hexy-foundation-test-suite:
+    dependencies:
+    - hexy-foundation
+    - tasty
+    - tasty-auto
+    - tasty-quickcheck
+    ghc-options:
+    - -rtsopts
+    - -threaded
+    - -with-rtsopts=-N
+    main: Main.hs
+    source-dirs: test-suite
+version: '0.0.0'
