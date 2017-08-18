@@ -1,5 +1,4 @@
 {-# LANGUAGE BangPatterns #-}
-{-# LANGUAGE ExistentialQuantification #-}
 
 module Hexy.Internal where
 
