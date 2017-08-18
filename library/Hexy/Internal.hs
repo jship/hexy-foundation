@@ -56,7 +56,7 @@ textShowIntAtBase base toChr n0
   | n0   <  0 = errorWithoutStackTrace ("Hexy.Internal.textShowIntAtBase: applied to negative number " ++ show n0)
   | otherwise = ST.runST $ do
       let !size = 2 + (2 * Storable.sizeOf n0)
-      mutableBuffer <- Foundation.Collection.mutNew (Foundation.CountOf size) :: ST s (Foundation.Array.MUArray Word8 s)
+      mutableBuffer <- Foundation.Collection.mutNew (Foundation.CountOf size)
       let hexLoop i (n, d) = do
             i' <- unsafeWriteRev mutableBuffer i c
             case n of
