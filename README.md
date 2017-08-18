@@ -1,6 +1,6 @@
 # [hexy-foundation][]
 
-Fast, flexible hexadecimal pretty-printing.  This repo is for the bonus stage in the final entry of the [Writing Performant Haskell][] blog post series.  It uses the `foundation` package instead of `text` to enable readers to compare implementations between [`hexy-foundation`][] and [`hexy`][].
+Fast, flexible hexadecimal pretty-printing.  This repo is for the bonus stage in the final entry of the [Writing Performant Haskell][] blog post series.  It uses the `foundation` package instead of `text` to enable readers to compare implementations between [hexy-foundation][] and [hexy][].
 
 ``` sh
 # Build the project.
